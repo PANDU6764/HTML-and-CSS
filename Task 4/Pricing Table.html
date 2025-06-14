@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .pricing-table {
+            display: flex;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .pricing-plan {
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+        }
+        .pricing-plan h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .pricing-plan .price {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .pricing-plan ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .pricing-plan ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .pricing-plan button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .pricing-plan button:hover {
+            background-color: #0056b3;
+        }
+        .highlight {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .highlight .price {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-plan">
+            <h2>Starter</h2>
+            <div class="price">$10/month</div>
+            <ul>
+                <li>10GB of space</li>
+                <li>100GB bandwidth</li>
+                <li>1 email account</li>
+                <li>1 MySQL database</li>
+                <li>24h support</li>
+                <li>1 support ticket/mo.</li>
+            </ul>
+            <button onclick="signUp('Starter')">Sign up!</button>
+        </div>
+        <div class="pricing-plan">
+            <h2>Econo</h2>
+            <div class="price">$30/month</div>
+            <ul>
+                <li>30GB of space</li>
+                <li>200GB bandwidth</li>
+                <li>10 email accounts</li>
+                <li>10 MySQL databases</li>
+                <li>24h support</li>
+                <li>3 support tickets/mo.</li>
+            </ul>
+            <button onclick="signUp('Econo')">Sign up!</button>
+        </div>
+        <div class="pricing-plan highlight">
+            <h2>Standard</h2>
+            <div class="price">$59/month</div>
+            <ul>
+                <li>100GB of space</li>
+                <li>500GB bandwidth</li>
+                <li>50 email accounts</li>
+                <li>50 MySQL databases</li>
+                <li>24h support</li>
+                <li>5 support tickets/mo.</li>
+            </ul>
+            <button onclick="signUp('Standard')">Sign up!</button>
+        </div>
+        <div class="pricing-plan">
+            <h2>Professional</h2>
+            <div class="price">$99/month</div>
+            <ul>
+                <li>Unlimited space</li>
+                <li>1000GB bandwidth</li>
+                <li>Unlimited email accounts</li>
+                <li>Unlimited MySQL databases</li>
+                <li>24h support</li>
+                <li>10 support tickets/mo.</li>
+            </ul>
+            <button onclick="signUp('Professional')">Sign up!</button>
+        </div>
+    </div>
+
+    <script>
+        function signUp(plan) {
+            alert('You have selected the ' + plan + ' plan!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Paths After 10th Class</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+#career-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#career-details {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <header>
+        <h1>Career Paths After 10th Class</h1>
+        <p>Select a stream to explore career options:</p>
+    </header>
+
+    <section id="career-options">
+        <div class="option" onclick="showDetails('science')">
+            <h2>Science</h2>
+            <p>Explore career opportunities in Science</p>
+        </div>
+        <div class="option" onclick="showDetails('commerce')">
+            <h2>Commerce</h2>
+            <p>Explore career opportunities in Commerce</p>
+        </div>
+        <div class="option" onclick="showDetails('arts')">
+            <h2>Arts/Humanities</h2>
+            <p>Explore career opportunities in Arts</p>
+        </div>
+        
+
+    </section>
+
+    <section id="career-details" class="hidden">
+        <h2 id="career-title"></h2>
+        <p id="career-description"></p>
+        <button onclick="goBack()">Back to options</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

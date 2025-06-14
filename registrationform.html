@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style>
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+         padding: 20px;
+      } 
+      h1{
+        text-align: center;
+        display: Registrationform;
+        color:black;
+        Display:Welcome Siddavatam Bhagyalakshmi
+     }
+     button{
+      background-color: rgb(255, 136, 0);
+     }
+     fieldset{
+      margin: 0%;
+      
+      
+      border-radius: 2dvb;
+     }
+    </style>
+    
+</head>
+<body>
+   <fieldset style="background-color: rgb(255, 140, 0);">
+   <h1>Student Registration Form</h1>
+</fieldset><br>
+   <fieldset>
+   <br>
+   <legend style="color: green;"><b>PERSONAL DETAILS:</b></legend>
+   First Name: <input type="text"> 
+   Middle Name: <input type="text"> 
+   Last Name: <input type="text"> <br><br>
+   Father's Name: <input type="text"><br><br>
+   Mother's Name: <input type="text"><br><br>
+   Date of Birth: <input type="date"><br><br>
+   Email-id: <input type="email"><br><br>
+   Gender: <input type="radio" name="Male" id="1">
+   <label for="Male">Male</label>
+   <b> <input type="radio" name="Male" id="2"></b>
+   <label for="Male">Female</label>
+   <b><input type="radio" name="Male" id="3"></b>
+   <label for="Male">Other</label><br><br>
+   Address: <input type="text" value="Street-  House- Road-"><br><br>
+</fieldset>
+<BR>
+<fieldset>
+   <legend style="color: green;" ><b>EDUCATIONAL DETAILS:</b></legend><BR>
+   10th Class Percentage: <input type="text">
+   Institute Name: <input type="text">
+   Passed out year<input type="date"><br><br>
+   12th Class Percentage: <input type="text">
+   Institute Name: <input type="text">
+   Passed out year<input type="date"><br><br>
+   B.Tech Percentage:<input type="text">
+   Institute Name: <input type="text">
+   Course Selection: <select>
+   <option value="" >CSE</option>
+   <option value="">DS</option>
+   <option value="">CS</option>
+   <option value="" selected>AIML</option>
+   <option value="">IT </option>
+   <option value="">ECE</option>
+   </select><br><br>
+</fieldset><br>
+<fieldset>
+   <legend style="color: green;"><b>DOCUMENTS:</b></legend><br>
+   10th Marks Memo: <input type="file"></b><br><br>
+   12th Marks Memo: <input type="file"></b><br><br>
+   <button type="button" onclick="showAlert()">Submit</button>
+   <button type="button" onclick="Alert()">Reset</button>
+  <script>
+      function showAlert(){
+         alert("Welcome to MBU");
+      }
+      function Alert(){
+         alert("Reset to new page");
+      }
+   </script>
+    
+</fieldset>
+</body>
+</html>
